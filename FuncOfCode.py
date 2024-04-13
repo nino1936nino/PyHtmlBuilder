@@ -15,5 +15,4 @@ class Html:
             f.write('    font-size: 18px;\n')
             f.write('}\n')
         with open('projects/'+self.webname+'/body.txt', 'a') as f:
-            f.write('<div class="big-bar">\n')
             f.write('<h2>' + self.text + '</h2>\n')

@@ -50,6 +50,25 @@ if answer == ('yes'):
                 html_instance.CenterInfo()
             if answer.lower()== 'close':
                 break
+            if answer.lower() == "compile":
+                with open('projects/'+webname+'/head.txt', 'r') as f:
+                 source_text = f.read()
+                with open('projects/'+webname+'/index.html', 'w') as f:
+                 f.write(source_text)
+                with open('projects/'+webname+'/style.txt', 'r') as f:
+                 source_text = f.read()
+                with open('projects/'+webname+'/index.html', 'a') as f:
+                    f.write(source_text)
+                with open('projects/'+webname+'/body.txt', 'r') as f:
+                    source_text = f.read()
+                with open('projects/'+webname+'/index.html', 'a') as f:
+                    f.write(source_text)
+                with open('projects/'+webname+'/body.txt', 'r') as f:
+                 source_text = f.read()
+                with open('projects/'+webname+'/index.html', 'a') as f:
+                 f.write(source_text)
+
+
                                        
                     
 elif answer != ('yes'.lower()):
